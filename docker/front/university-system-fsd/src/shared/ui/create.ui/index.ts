@@ -1,0 +1,8 @@
+export { InfoWrapper } from './create.wrapperInformation.ui.tsx'
+export { CreateInput } from './create.input.ui.tsx'
+export { SelectForCreate } from './create.select.ui.tsx'
+export { AdditionInfo } from './create.wrapperAddInfo.ui.tsx'
+export { InputFile } from './create.inputFile.ui.tsx'
+export { CreatePageHead } from './create.header.ui.tsx'
+export { CreateWrapper } from './create.wrapper.ui.tsx'
+export { CreateCancelBtn } from './create.cancelBtn.ui.tsx'

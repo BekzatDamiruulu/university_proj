@@ -1,0 +1,67 @@
+.editSelect
+  margin-top: 12px
+  background: #FFF
+  width: 100%
+  &__label
+    color: #000
+    font-size: 20px
+    font-weight: 600
+  &__wrapper
+    height: 38px
+    margin-top: 12px
+    border-radius: 10px
+    border: 1px solid #D8E2EF
+    background: #FFF
+    color: #B6C1D1
+    font-size: 16px
+    font-weight: 600
+    line-height: 20px
+    padding-left: 16px
+    display: flex
+    align-items: center
+    position: relative
+    &::after
+      content: ""
+      display: block
+      height: 11px
+      width: 22px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: 32px
+      background: url("./../../assets/select.svg") center center / cover no-repeat
+  &__items
+    display: none
+    position: absolute
+    left: 2.5%
+    top: 12px
+    z-index: 9
+    width: 95%
+    height: 120px
+    overflow: scroll
+    padding: 4px 0
+    background: #F9FAFE
+    border: 1px solid #bdd1eb
+    &-active
+      display: block
+  &__item
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #0006ff
+    height: 30px
+    margin-bottom: 4px
+    background: #e2e2e2
+    font-size: 20px
+    letter-spacing: 1px
+    font-weight: 400
+    &-active
+      background: rgb(103, 161, 253)
+      color: rgb(255, 255, 255)
+    &:active
+      background: #afafaf
+      color: #585bff
+    &:hover
+      background: #bbbbbb
+      color: #0004ff

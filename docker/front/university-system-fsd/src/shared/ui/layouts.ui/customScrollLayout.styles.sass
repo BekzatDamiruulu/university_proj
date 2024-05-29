@@ -1,0 +1,84 @@
+.scroll-hide
+  width: 1205px
+  overflow: hidden
+.scrollBar
+  overflow: hidden
+  display: none
+  position: absolute
+  top: 62px
+  left: -16px
+  width: 10px
+  border: 0.5px solid rgba(105, 105, 105, 1)
+  height: 0
+  background: #fff
+  &__block
+    position: absolute
+    left: 0
+    top: 0
+    width: 9px
+    height: 0
+    background: #7ca4f9
+
+.list
+  tr.list__divider
+    height: 12px
+    opacity: 0
+    border: none
+    box-shadow: none
+  thead
+    position: sticky
+    left: 0
+    top: 0
+  border-collapse: inherit
+  border-spacing: 0px
+  min-height: 50px
+  width: 1200px
+  &__toTop
+    background: #818080
+    height: 35px
+    width: 35px
+    border-radius: 100%
+    position: sticky
+    bottom: 15px
+    left: 1150px
+    cursor: pointer
+    display: none
+    background-image: url("./../../assets/images/top.svg")
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    &-active
+      display: block
+  &__wrapper
+    border-radius: 5px
+    width: 1295px
+    margin-top: 12px
+    min-height: 64px
+    max-height: 600px
+    position: relative
+    overflow-y: scroll
+    overflow-x: hidden
+  &__body
+    tr
+      height: 60px
+      background: #FFF
+      border-radius: 10px
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.17)
+      td
+        height: 70px
+        color: #000
+        font-size: 16px
+        font-weight: 500
+        height: 60px
+        border-top: 1px solid #D6D6D6
+        border-bottom: 1px solid #D6D6D6
+      td:nth-child(1)
+        width: 240px
+        border-bottom-left-radius: 10px
+        border-top-left-radius: 10px
+        padding-left: 10px
+        border-left: 1px solid #D6D6D6
+      td:last-child
+        border-bottom-right-radius: 10px
+        border-top-right-radius: 10px
+        border-right: 1px solid #D6D6D6

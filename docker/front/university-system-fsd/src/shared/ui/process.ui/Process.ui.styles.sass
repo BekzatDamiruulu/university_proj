@@ -1,0 +1,35 @@
+.process
+  background: rgba(142, 141, 141, 0.58)
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 1000
+  &__wrapper
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-60%)
+    width: 483px
+    height: 395px
+    border-radius: 10px
+    margin: 0 auto
+    background: #fff
+    padding-top: 100px
+  &__image
+    margin: 0 auto
+    height: 100px
+    width: 100px
+    background: #fff
+  &__image-loading
+    background: url("./../../assets/resultsOfAction/Gear-0.2s-200px.svg") center center / cover no-repeat
+  &__image-success
+    background: url("./../../assets/resultsOfAction/success.svg") center center / cover no-repeat
+  &__image-error
+    background: url("./../../assets/resultsOfAction/error.svg") center center / cover no-repeat
+  &__result
+    text-align: center
+    margin-top: 32px
+    color: #46A6FE
+    font-size: 20px
+    font-weight: 600
+    text-transform: uppercase

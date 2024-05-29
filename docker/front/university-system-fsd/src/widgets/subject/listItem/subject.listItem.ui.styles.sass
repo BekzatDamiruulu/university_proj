@@ -1,0 +1,128 @@
+@keyframes deleteSubject
+  from
+    clip-path: circle(580px at center)
+  to
+    clip-path: circle(0px at center)
+.scheduleItem
+  transition: 1.5s all
+  display: flex
+  justify-content: space-between
+  width: 580px
+  height: 70px
+  margin-bottom: 15px
+  border-radius: 15px
+  border: 1px solid #7C7C7C
+  background: #FFF
+  padding: 10px
+  position: relative
+  &__deleted
+    animation-name: deleteSubject
+    animation-duration: 1.2s
+    animation-iteration-count: 1
+  .left
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
+    &__time
+      padding-left: 30px
+      color: #000
+      font-size: 14px
+      font-weight: 500
+      line-height: 20px
+      text-transform: lowercase
+      position: relative
+      &::before
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 0px
+        content: ""
+        display: block
+        height: 25px
+        width: 25px
+        background: url("./../../../shared/assets/images/schedule/time.svg") center center / cover no-repeat
+    &__type
+      padding-left: 30px
+      color: #000
+      font-size: 14px
+      font-weight: 300
+      line-height: 20px
+      text-transform: lowercase
+      position: relative
+      &::before
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 5px
+        content: ""
+        display: block
+        height: 16px
+        width: 16px
+        background: url("./../../../shared/assets/images/schedule/location.svg") center center / cover no-repeat
+  .right
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
+    &__subject
+      color: #000
+      font-size: 14px
+      font-weight: 300
+      line-height: 20px
+      text-transform: lowercase
+      position: relative
+      &::before
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -30px
+        content: ""
+        display: block
+        height: 21.5px
+        width: 20px
+        background: url("./../../../shared/assets/images/schedule/subject.svg") center center / cover no-repeat
+    &__teacher
+      color: #000
+      font-size: 13px
+      font-weight: 500
+      line-height: 13px
+      text-transform: capitalize
+      position: relative
+      &::before
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -30px
+        content: ""
+        display: block
+        height: 21.5px
+        width: 20px
+        background: url("./../../../shared/assets/images/schedule/teacher.svg") center center / cover no-repeat
+  .mechanics
+    > button
+      border-radius: 100%
+      width: 25px
+      height: 25px
+      &:active
+        box-shadow: 1px 1px 5px rgb(158 158 158)
+    &__edit
+      background-color: red
+      background-image:  url("./../../../shared/assets/images/schedule/editSchedule.svg")
+      background-position: center center
+      background-repeat: no-repeat
+      background-size: cover
+    &__delete
+      background-image:  url("./../../../shared/assets/images/schedule/delete.svg")
+      background-size: 85%
+      background-position: center center
+      background-repeat: no-repeat
+      margin-left: 15px
+  &__mechanics
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    position: absolute
+    right: -75px
+    top: 50%
+    transform: translateY(-50%)

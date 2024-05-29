@@ -1,0 +1,6 @@
+export { facultyReducer } from './faculty.model.ts'
+export { facultyApi } from './faculty.api.ts'
+export { facultyActions } from './faculty.model.ts'
+export { useLoadMoreFaculties } from './hooks/index.ts'
+export type { IFaculty } from './faculty.contracts.ts'
+export * as facultyHooks from './hooks/index.ts'

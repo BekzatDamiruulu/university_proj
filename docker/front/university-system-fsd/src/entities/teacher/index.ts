@@ -1,0 +1,7 @@
+export { teacherReducer } from './teacher.model.ts'
+export { teacherApi } from './teacher.api.ts'
+export { teacherActions } from './teacher.model.ts'
+export type { ITeacher } from './teacher.contracts.ts'
+export type { TTeacherPicked } from './teacher.types.ts'
+export * as teacherHooks from './hooks/index.ts'
+export { TeacherContext } from './teacher.context.ts'

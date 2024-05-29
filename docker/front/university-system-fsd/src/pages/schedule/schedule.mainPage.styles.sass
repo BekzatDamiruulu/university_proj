@@ -1,0 +1,56 @@
+.schedulePage
+  width: 1255px
+  height: 860px
+  border-radius: 5px
+  background: #C8D6E3
+  padding: 20px 16px 16px 32px
+  &__no
+    height: 24px
+    font-size: 16px
+    font-weight: 500
+    text-transform: uppercase
+    padding: 4px
+    display: inline-block
+  .scheduleSelect
+    margin-top: 12px
+  &__header
+    color: #000
+    font-size: 20px
+    font-weight: 600
+    text-transform: uppercase
+  &__days
+    margin-top: 32px
+  &__subjects
+    min-height: 30px
+    display: inline-block
+    min-width: 500px
+    padding-right: 90px
+    height: 600px
+    margin-top: 16px
+  &__btn
+    display: block
+    position: relative
+    width: 200px
+    height: 40px
+    margin-top: 20px
+    color: #000
+    font-size: 13px
+    font-weight: 500
+    line-height: 13px
+    border-radius: 10px
+    border: 1px solid #828282
+    background: #FFF
+    margin-left: 25%
+    padding-left: 35px
+    transform: translateX(-50%)
+    &:active
+      background: #e4e4e4
+    &::before
+      content: ""
+      display: block
+      height: 25px
+      width: 25px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      background: url("./../../shared/assets/images/schedule/addSchedule.svg") center center / cover no-repeat
